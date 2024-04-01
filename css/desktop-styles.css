@@ -54,7 +54,7 @@ color: #434455;
     margin-right: auto;
 }
 
-.secondary-title {
+/* .secondary-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -65,12 +65,12 @@ color: #434455;
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /*/Comon styles*/
 
 /*Page header styles*/
-.logo{
+/* .logo{
 font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -92,7 +92,7 @@ font-family: 'Raleway', sans-serif;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #2e2f42;
-}
+} */
 
 /* .page-nav {
     display: flex;
@@ -283,7 +283,7 @@ border-radius: 2px;
     width: calc((100% - 72px) / 4);
 /* } / */
 
-    .images-overlay {
+    /* .images-overlay {
         position: relative;
             overflow: hidden;
             display: flex;
@@ -309,8 +309,8 @@ border-radius: 2px;
             text-align: left;
             font-size: 16px;
             line-height: 1.5;
-        }
-     .portfolio-item:hover .box-text-overlay {
+        } */
+     /* .portfolio-item:hover .box-text-overlay {
      transform: translateY(0%);
             
      }
@@ -321,7 +321,7 @@ border-radius: 2px;
         flex-wrap: wrap;
         
         
-    }
+    } */
  
 /* .team-member{
 background-color: #FFFFFF;
@@ -351,7 +351,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         color: #2e2f42;
         margin-bottom: 8px;
 } */
-.portfolio-title{
+/* .portfolio-title{
     margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
@@ -374,7 +374,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
       box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);  
-    }
+    } */
         
 /* .section-team {
     padding: 120px 0;
@@ -413,18 +413,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         height: 40px;
     } */
         
-.app-wrapper {
+/* .app-wrapper {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-}
-.header {
+} */
+/* .header {
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-between; }*/
 
                            /*=========Footer=========*/
-.bottom{
+/* .bottom{
     background-color: #2e2f42;
     height: 312px;
     padding: 100px 0;
@@ -485,7 +484,7 @@ display: flex;
 .container-first {
     display: block;
  margin-right: 120px;   
-}
+} */
 /*===============Backdrop styles======================*/
 .backdrop {
     position: fixed;
