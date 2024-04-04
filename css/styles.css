@@ -53,29 +53,32 @@ body {
 .container {
     width: 320px;
     padding: 96px 16px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .container.header {
-    padding: 16px;
+    padding: 0 16px;
 }
 
 @media only screen and (min-width: 768px) {
 .container {
     width: 768px; 
+    
 }
-.container.header {
-       padding: 0 16px;
-}
+
 }
 
 @media only screen and (min-width: 1158px) {
     .container {
-    width: 1158px;
-    padding: 120px 16px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 1158px;
+    padding: 0 16px;
+       
     }  
+        .section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+    
+        }
 }
 
 
@@ -150,7 +153,9 @@ body {
     margin-bottom: 72px;
     /* margin-top: 96px; */
 }
-
+/* .main-page.container {
+ padding: 72px 52px;   
+} */
 
 .main-page {
     min-width: 320px;
@@ -162,7 +167,7 @@ body {
     background-size: cover;
     background-color: #2e2f42;
     /* padding: 188px 0; */
-    padding: 72px 52px;
+    
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -178,9 +183,8 @@ body {
     .title {
         max-width: 216px;
         margin-bottom: 72px;
-        margin-left: auto;
         margin-right: auto;
-        text-align: center;
+        margin-left: auto;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -236,6 +240,9 @@ body {
 }
 
 @media only screen and (min-width: 767px){
+    /* .container {
+            padding: 112px 136px;
+        } */
     .menu {
         display: flex;
         gap: 40px;
@@ -320,8 +327,8 @@ body {
         url("../images/hero-image-tab-1x.jpg");
     background-size: cover;
     background-color: #2e2f42;
-    /* padding: 188px 0; */
-    padding: 112px 136px;
+    padding: 188px 0;
+    
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -337,24 +344,17 @@ body {
     .title {
         min-width: 496px;
         margin-bottom: 36px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
-        letter-spacing: 0.02em;
         text-align: center;
-        text-transform: capitalize;
+        
         color: #ffffff;
     }
 }
    @media screen and (min-width: 1158px) {
        .title {
-           max-width: 496px;
            margin-bottom: 48px;
            font-size: 56px;
-           line-height: 1.07;
        }
            .main-page {
                max-width: 1440px;
@@ -711,14 +711,15 @@ gap: 72px;
 }
 .team {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 72px 24px;
     
 }
-.team-member {
+/* .team-member {
     width: calc((100% - 24px) / 2);   
-    /* margin-bottom: 64px; */
-}
+    
+} */
 
 }
 
@@ -732,7 +733,7 @@ gap: 72px;
 
     }
     
-        .team-member {
+     .team-member {
         width: calc((100% - 72px) / 4);
         }
 }
@@ -758,6 +759,8 @@ gap: 72px;
  }
 .portfolio-item {
    width: 288px;
+border: 1px solid #f4f4fd;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -942,6 +945,7 @@ gap: 72px;
  @media screen and (min-width: 1158px) {
     .container-first {
         margin-right: 120px;
+        margin-left: auto;
  }
 }
 

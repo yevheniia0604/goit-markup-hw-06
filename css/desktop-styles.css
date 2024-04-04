@@ -234,11 +234,7 @@ border-radius: 2px;} */
         background: #404bbf;
     } */
 /* /Hero Sections Styles*/
-.section{
-    padding-top: 120px;
-    padding-bottom: 120px;
 
-}
 
 /* .team {
     display: flex;
@@ -768,9 +764,10 @@ border: none;
 .subscribe-icon {
     fill: #ffffff;
     margin-left: 16px;
-}
+/* } */
 
-.subscribe-btn:hover,
+
+/* .subscribe-btn:hover, */
 .subscribe-btn:focus {
     background-color: #404BBF;
-} */
+}
