@@ -29,6 +29,7 @@ p {
 
 img {
     display: block;
+    width: 100%;
 }
 
 body {
@@ -52,27 +53,29 @@ body {
 
 .container {
     width: 320px;
-    padding: 96px 16px;
-    /* margin: 0 auto; */
-}
-
-.container.header {
+    margin: 0 auto;
     padding: 0 16px;
+}
+.section {
+padding-top: 72px;
+padding-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
 .container {
-    width: 768px; 
-    
+    width: 768px;  
+       
 }
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
 
+}
 }
 
 @media only screen and (min-width: 1158px) {
     .container {
-    min-width: 1158px;
-    padding: 0 16px;
-       
+    min-width: 1158px;      
     }  
         .section {
             padding-top: 120px;
@@ -135,7 +138,7 @@ body {
     border-bottom: 1px solid #e7e9fc;
     /* display: flex; */
     /* justify-content: space-between; */
-    padding: 0 15px 0 15px;
+    padding: 16px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -166,7 +169,8 @@ body {
         url("../images/hero-image-tel-1x.jpg");
     background-size: cover;
     background-color: #2e2f42;
-    /* padding: 188px 0; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     
     background-repeat: no-repeat;
     background-position: center;
@@ -196,7 +200,6 @@ body {
  
     .button {
         display: block;
-        margin-bottom: 72px;
         margin-left: auto;
         margin-right: auto;
         font-family: "Roboto", sans-serif;
@@ -327,7 +330,7 @@ body {
         url("../images/hero-image-tab-1x.jpg");
     background-size: cover;
     background-color: #2e2f42;
-    padding: 188px 0;
+    padding: 112px 0;
     
     background-repeat: no-repeat;
     background-position: center;
@@ -392,8 +395,8 @@ body {
     z-index: 99999;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     padding-top: 24px;
     padding-right: 24px;
@@ -473,7 +476,9 @@ font-weight: 700;
 .mob-menu-link:focus {
     color: #404bbf;
 }
-
+.studio.mob-menu-link {
+    color: #404bbf;
+}
 .mob-menu-item {
     margin-bottom: 40px;
 }
@@ -490,12 +495,21 @@ font-weight: 700;
         color: #434455;
         font-style: normal;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 24px;
         }
+.tel.mob-contact {
+    color: #4d5ae5;
+}
         
 .mob-contact:hover,
 .mob-contact:focus {
      color: #404bbf;
  }
+.mob-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 .mob-social-list {
     display: flex;
@@ -543,12 +557,6 @@ font-weight: 700;
     
 }
 
-.benefits-item {
-    width: 100%;
-}
-/* .icon-container {
-    display: none;
-} */
 .menu-benefits-title {
     font-weight: 700;
     font-size: 36px;
@@ -598,7 +606,7 @@ font-weight: 700;
         column-gap: 72px;
     }
     .benefits-item {
-    flex-basis: calc((100% - 72px) / 2);
+    width: calc((100% - 72px) / 2);
   }
 }
 
@@ -619,7 +627,7 @@ font-weight: 700;
 }
 
 .benefits-item {
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 }
 /* ==============Section Team========== */
@@ -627,11 +635,11 @@ font-weight: 700;
 
 
 .section-team {
-   /* padding-right:  28px; */
-    background: #f4f4fd;
+   background-color: #f4f4fd;
 }
 .team {
 display: flex;
+align-items: center;
 flex-direction: column;
 gap: 72px;
 }
@@ -758,7 +766,6 @@ gap: 72px;
     }
  }
 .portfolio-item {
-   width: 288px;
 border: 1px solid #f4f4fd;
 box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -800,12 +807,6 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
  .images-overlay {
      position: relative;
      overflow: hidden;
-     display: flex;
-     flex-direction: column;
-     gap: 0;
-     background: #ffffff;
-     width: 360px;
-     height: 300px;
  }
 
  .box-text-overlay {
@@ -835,6 +836,8 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
  .bottom {
      background-color: #2e2f42;
+     padding-top: 96px;
+     padding-bottom: 96px;
      
  }
  @media screen and (min-width: 1158px) {
@@ -846,7 +849,6 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 .footer {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
